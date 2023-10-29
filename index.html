@@ -56,15 +56,25 @@
     </div>
 
     <script type="text/javascript">
+      var random_user={
+        marital_status:1,
+        parental:0,
+        education:4,
+        employment:5,
+        career:13,
+        race:1,
+        income:4,
+        spoken_languages:3,
+        organization_role:11,
+        number_of_employees:4,
+        postal_data:"30000|CH"
+      }
       var pollfishConfig = {
         api_key: "bf98de34-d285-4586-90f8-30f4e36957b7",
         user_id: "12345", // this is an example user id
         indicator_position: "BOTTOM_RIGHT",
         debug: false,
-        marital_status:1,
-        gender:1,
-        education:4,
-
+        user: random_user,
         // https://www.pollfish.com/docs/webplugin. 
         // Set the ready function to prevent autostarting the survey panel
         ready: () => {},
